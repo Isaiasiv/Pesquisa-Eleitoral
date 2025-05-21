@@ -1,3 +1,5 @@
+------------------------------------------------------------Componentes de layout------------------------------------------------------------
+
 Implementar um formulário para uma pesquisa eletrônica no âmbito municipal:
 
 o   O eleitor deve informar:
