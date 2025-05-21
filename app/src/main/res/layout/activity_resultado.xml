@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo TSE -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="223dp"
+        android:layout_height="115dp"
+        app:srcCompat="@drawable/tse"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Texto 'comprovante de votação' -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="comprovante de votação"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Informações do Eleitor -->
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo:"
+        app:layout_constraintTop_toBottomOf="@id/textViewNome"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/textViewZona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zona:"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/textViewSecao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seção:"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitulo"
+        app:layout_constraintStart_toEndOf="@id/textViewZona"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="125dp" />
+
+    <TextView
+        android:id="@+id/textViewCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade:"
+        app:layout_constraintTop_toBottomOf="@id/textViewZona"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- Imagem do Prefeito -->
+    <TextView
+        android:id="@+id/textViewEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:text="Estado:"
+        app:layout_constraintStart_toEndOf="@id/textViewCidade"
+        app:layout_constraintTop_toBottomOf="@id/textViewSecao" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@id/textViewEstado"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- Texto Prefeito -->
+    <TextView
+        android:id="@+id/textViewprefeito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prefeito"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/imageView2"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textViewPrefeitoNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        app:layout_constraintTop_toBottomOf="@id/textViewprefeito"
+        app:layout_constraintStart_toStartOf="@id/textViewprefeito"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewPartidoPre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partido"
+        app:layout_constraintTop_toBottomOf="@id/textViewPrefeitoNum"
+        app:layout_constraintStart_toStartOf="@id/textViewprefeito"
+        android:layout_marginTop="8dp" />
+
+    <!-- Imagem do Vereador -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- Texto Vereador -->
+    <TextView
+        android:id="@+id/textViewVereadorNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vereador"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textViewVereadorNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00 000"
+        app:layout_constraintTop_toBottomOf="@id/textViewVereadorNome"
+        app:layout_constraintStart_toStartOf="@id/textViewVereadorNome"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewPratido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pratido"
+        app:layout_constraintTop_toBottomOf="@id/textViewVereadorNum"
+        app:layout_constraintStart_toStartOf="@id/textViewVereadorNome"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botão Fechar -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fecha"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
